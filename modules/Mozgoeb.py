@@ -11,7 +11,7 @@ def a(client):
 	async def _(event):
 		reply = await event.get_reply_message()
 		if not reply:
-			await event.edit("<b>Использовать в ответ на сообщение!</b>", parse_mode='html')
+			await event.edit("<b>use only for reply</b>", parse_mode='html')
 			return
 		id = reply.from_id
 		try:
@@ -26,7 +26,7 @@ def a(client):
 					count = 50
 				else:
 					count = int(args[-1])
-		txt = f'<a href="tg://user?id={id}">огузок)</a>'
+		txt = f'<a href="youtube.com/watch?v=dQw4w9WgXcQ">огузок)</a>'
 		await event.delete()
 		for _ in range(count):
 			await sleep(0.3)
